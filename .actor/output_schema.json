@@ -1,0 +1,11 @@
+{
+    "actorOutputSchemaVersion": 1,
+    "title": "Output schema of NPI Registry Lookup",
+    "properties": {
+        "results": {
+            "type": "string",
+            "title": "Provider records",
+            "template": "{{links.apiDefaultDatasetUrl}}/items"
+        }
+    }
+}

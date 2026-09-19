@@ -1,0 +1,57 @@
+{
+    "title": "NPI Registry Lookup Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "npiNumber": {
+            "title": "NPI number (for a single direct lookup)",
+            "type": "string",
+            "editor": "textfield",
+            "description": "10-digit NPI number to look up directly. Leave blank to search by name/location instead."
+        },
+        "lastName": {
+            "title": "Last name or organization name (for a single search)",
+            "type": "string",
+            "editor": "textfield",
+            "description": "Individual provider's last name, or an organization's name. Leave the Queries (multiple) field below empty to use this single-search shortcut instead.",
+            "prefill": "Smith"
+        },
+        "firstName": {
+            "title": "First name (optional, for a single search)",
+            "type": "string",
+            "editor": "textfield",
+            "description": "Only used together with Last name above, for individual providers."
+        },
+        "state": {
+            "title": "State (optional, for a single search)",
+            "type": "string",
+            "editor": "textfield",
+            "description": "Two-letter state code to narrow results, e.g. \"NY\"."
+        },
+        "taxonomyDescription": {
+            "title": "Specialty/taxonomy (optional, for a single search)",
+            "type": "string",
+            "editor": "textfield",
+            "description": "Provider specialty to filter by, e.g. \"Dentist\" or \"Family Medicine\"."
+        },
+        "queries": {
+            "title": "Queries (multiple)",
+            "type": "array",
+            "editor": "json",
+            "description": "For running several lookups in one go instead of one at a time. One entry per query: { \"npiNumber\" } or { \"lastName\", \"firstName\", \"state\", \"taxonomyDescription\" }. Ignored if Last name/NPI number above is filled in.",
+            "prefill": [
+                { "lastName": "Smith", "state": "NY" }
+            ]
+        },
+        "maxResults": {
+            "title": "Max results per query",
+            "type": "integer",
+            "editor": "number",
+            "description": "Maximum number of matches to return per query (NPPES API max is 200).",
+            "default": 10,
+            "minimum": 1,
+            "maximum": 200
+        }
+    },
+    "required": []
+}

@@ -1,0 +1,13 @@
+{
+    "actorSpecification": 1,
+    "name": "npi-registry-lookup",
+    "title": "NPI Registry Lookup — Healthcare Provider Verification",
+    "description": "Look up US healthcare providers and organizations by NPI number, name, or location: credential, taxonomy/specialty, license, status, and address, via the official CMS NPPES NPI Registry API.",
+    "version": "0.1",
+    "meta": {
+        "templateId": "custom-no-proxy"
+    },
+    "input": "./input_schema.json",
+    "output": "./output_schema.json",
+    "dockerfile": "../Dockerfile"
+}
