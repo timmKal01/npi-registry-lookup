@@ -1,0 +1,78 @@
+{
+    "actorSpecification": 1,
+    "fields": {},
+    "views": {
+        "overview": {
+            "title": "Overview",
+            "transformation": {
+                "fields": [
+                    "npi",
+                    "type",
+                    "name",
+                    "credential",
+                    "status",
+                    "primaryTaxonomy",
+                    "licenseNumber",
+                    "licenseState",
+                    "city",
+                    "state",
+                    "phone",
+                    "enumerationDate"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "npi": {
+                        "label": "NPI",
+                        "format": "text"
+                    },
+                    "type": {
+                        "label": "Type",
+                        "format": "text"
+                    },
+                    "name": {
+                        "label": "Name",
+                        "format": "text"
+                    },
+                    "credential": {
+                        "label": "Credential",
+                        "format": "text"
+                    },
+                    "status": {
+                        "label": "Status",
+                        "format": "text"
+                    },
+                    "primaryTaxonomy": {
+                        "label": "Primary taxonomy",
+                        "format": "text"
+                    },
+                    "licenseNumber": {
+                        "label": "License number",
+                        "format": "text"
+                    },
+                    "licenseState": {
+                        "label": "License state",
+                        "format": "text"
+                    },
+                    "city": {
+                        "label": "City",
+                        "format": "text"
+                    },
+                    "state": {
+                        "label": "State",
+                        "format": "text"
+                    },
+                    "phone": {
+                        "label": "Phone",
+                        "format": "text"
+                    },
+                    "enumerationDate": {
+                        "label": "Enumeration date",
+                        "format": "text"
+                    }
+                }
+            }
+        }
+    }
+}
