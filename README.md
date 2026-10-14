@@ -62,6 +62,6 @@ Billed per **query**, not per result returned.
 
 ## Related products
 
-- [Hospital Quality Lookup](https://github.com/timmKal01/hospital-quality-lookup)
-- [Nursing Home Quality Lookup](https://github.com/timmKal01/nursing-home-quality-lookup)
-- [Home Health Agency Lookup](https://github.com/timmKal01/home-health-agency-lookup)
+- [Hospital Star Ratings Lookup](https://apify.com/m_ctim/hospital-quality-lookup)
+- [Nursing Home Ratings Lookup](https://apify.com/m_ctim/nursing-home-quality-lookup)
+- [Home Health Agency Ratings](https://apify.com/m_ctim/home-health-agency-lookup)
