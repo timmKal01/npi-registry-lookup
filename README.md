@@ -59,9 +59,3 @@ Direct calls to the official CMS NPPES NPI Registry API
 ## Pricing note
 
 Billed per **query**, not per result returned.
-
-## Related products
-
-- [Hospital Star Ratings Lookup](https://apify.com/m_ctim/hospital-quality-lookup)
-- [Nursing Home Ratings Lookup](https://apify.com/m_ctim/nursing-home-quality-lookup)
-- [Home Health Agency Ratings](https://apify.com/m_ctim/home-health-agency-lookup)
