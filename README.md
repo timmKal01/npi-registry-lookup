@@ -35,6 +35,7 @@ this portfolio's other CMS-quality-data actors.
 
 ```json
 {
+  "rowType": "provider",
   "npi": "1366148975",
   "type": "individual",
   "name": "RACHEL M AMSEL",

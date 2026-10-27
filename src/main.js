@@ -43,7 +43,7 @@ for (const q of queries) {
     }
 
     if (results.length > 0) {
-        await Actor.pushData(results);
+        await Actor.pushData(results.map((provider) => ({ rowType: 'provider', ...provider })));
     }
     await Actor.charge({ eventName: QUERY_EVENT });
 
